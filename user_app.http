@@ -1,0 +1,36 @@
+### get all users
+GET http://127.0.0.1:8001/api/users/
+
+### GET SINGLE USER
+GET http://127.0.0.1:8001/api/users/5
+
+### CREATE A USER
+POST http://127.0.0.1:8001/api/users/
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+    "goals": ""
+}
+
+### UPDATE USER INFORMATION
+PUT http://127.0.0.1:8001/api/users/1
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+    "goals": ""
+}
+
+### UPDATE GOALS
+PATCH http://127.0.0.1:8001/api/users/1
+Content-Type: application/json
+
+{
+    "goals": ""
+}
+
+### DELETE A USER
+DELETE http://127.0.0.1:8001/api/users/7

@@ -1,0 +1,25 @@
+### GET ALL TODOS
+GET http://127.0.0.1:8001/api/todos/
+
+### GET SINGLE TODOS
+GET http://127.0.0.1:8001/api/todos/1
+
+### CREATE TODO PROJECT
+POST http://127.0.0.1:8001/api/todos/
+Content-Type: application/json
+
+{
+    "user_email": "",
+    "todo": ""
+}
+
+### UPDATE TODO PROJECT COMPLETED
+PATCH http://127.0.0.1:8001/api/todos/2
+Content-Type: application/json
+
+{
+    "completed": true
+}
+
+### DELETE A TODO PROJECT
+DELETE http://127.0.0.1:8001/api/todos/2
